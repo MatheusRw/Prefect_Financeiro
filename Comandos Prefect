@@ -1,0 +1,14 @@
+comandos adicionais para o funcionamento do prefect
+
+$env:Path += ";C:\Users\seu_usuario\.cargo\bin"  --localiza a variavel de instalação do cargo 
+$env:PREFECT_API_URL = "http://127.0.0.1:4200/api" -- localiza a variavel de ambiente api gerada pelo prefect 
+
+{comandos do prefect 
+prefect worker start 
+prefect deploy -n demor-dep     
+prefect server start  
+prefect worker start --pool "pool_teste" } 
+
+
+
+prefect deploy -n teste_matheus 
